@@ -1,0 +1,22 @@
+package config
+
+import (
+    "os"
+    "strconv"
+)
+
+type Config struct {
+    Port        int
+    DatabaseURL string
+}
+
+func LoadConfig() (*Config, error) {
+    port, err := strconv.Atoi(os.Getenv("APP_PORT"))
+    if err != nil {
+        return nil, err
+    }
+    return &Config{
+        Port:        port,
+        DatabaseURL: os.Getenv("DATABASE_URL"),
+    }, nil
+}
