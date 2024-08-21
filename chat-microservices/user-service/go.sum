@@ -1,6 +1,0 @@
-github.com/gin-gonic/gin v1.7.4/go.mod h1:vBj7S6U1jw4k5+f0V0Iym2KzjECiTG06Gc1L8CtmYCc=
-github.com/gin-gonic/gin v1.7.4 h1:OJj8C7jg5hZCbGZuQ+W0MwG501n2oY6snthjp2O60oQ=
-github.com/go-playground/validator/v10 v10.4.1/go.mod h1:nlOn6nFhuKACm19sB/8EGNn9GlaMV7XkbRSipzJ0Ii4=
-github.com/go-playground/validator/v10 v10.4.1 h1:pH2c5ADXtd66mxoE0Zm9SUhxE20r7aM3F26W0hOn+GE=
-golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
-golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2 h1:VklqNMn3ovrHsnt90PveolxSbWFaJdECFbxSq0Mqo2M=
