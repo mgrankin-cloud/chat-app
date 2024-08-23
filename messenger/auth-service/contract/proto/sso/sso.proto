@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package auth;
+
+option go_package = "mgrankin-cloud.sso.v1;ssov1";
+
+service Auth {
+    rpc Authenticate (AuthenticateRequest) returns (AuthenticateResponse);
+
+    rpc CheckAuthentication (CheckAuthenticationRequest) returns (CheckAuthenticationResponse);
+
+    rpc Logout (LogoutRequest) returns (LogoutResponse);
+
+    rpc Register (RegisterRequest) returns (RegisterResponse);
+}
+
+message AuthenticateRequest {
+    string identifier = 1;
+    string password = 2;
+}
+
+message AuthenticateResponse {
+    bool success = 1;   
+    string message = 2; 
+    string session_id = 3; 
+    string token = 4;
+}
+
+message CheckAuthenticationRequest {
+    string session_id = 1;
+}
+
+message CheckAuthenticationResponse {
+    string authenticated = 1;
+    string user_id = 2;
+}
+
+message LogoutRequest {
+    string session_id = 1;
+}
+
+message LogoutResponse {
+    bool success = 1;  
+    string message = 2;  
+}
+
+message RegisterRequest {
+    string email = 1;
+    string username = 2;
+    string password = 3;
+    string phone = 4;
+}
+
+message RegisterResponse {
+    bool success = 1;
+    string message = 2;
+    string user_id = 3;
+}
