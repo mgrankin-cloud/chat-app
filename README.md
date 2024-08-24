@@ -2,13 +2,11 @@
 
 ![image](https://github.com/user-attachments/assets/d9f193ca-f4c8-4557-9da4-fa61d10cfc80)
 
-Стек: Go + Kotlin
+Стек: Go(сервер) + Kotlin(клиент)
 
 БД: PostgreSQL
 
-Gin для создания HTTP API
-
-gRPC для межсервисного взаимодействия
+go-gRPC, java-grpc для межсервисного взаимодействия
 
 Redis для кэширования и управления сессиями
 
