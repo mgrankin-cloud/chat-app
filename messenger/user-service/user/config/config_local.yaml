@@ -1,0 +1,5 @@
+env: "local"
+storage_path: "postgres://root:pass@localhost:5432/instant_messenger_db?sslmode=disable"
+grpc:
+  port: 44044
+  timeout: 10h
