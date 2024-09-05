@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Градиент при фокусе -->
+    <item android:state_focused="true" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#46ADA4"
+                android:centerColor="#327872"
+                android:endColor="#000000"
+                android:angle="0"
+                android:type="linear"
+                />
+            <corners android:radius="8dp"/>
+            </shape>
+    </item>
+    <!-- Обычное состояние -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#121212"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+</selector>

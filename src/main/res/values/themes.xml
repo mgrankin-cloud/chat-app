@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MessengerApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Цвет акцента (используется для курсоров, выделения, кнопок и т.д.) -->
+        <item name="colorPrimary">@color/custom_color</item>
+        <item name="colorPrimaryVariant">@color/custom_color_variant</item>
+        <item name="colorAccent">@color/custom_color</item>
+        <!-- Цвет, используемый для границ, таких как активные поля ввода текста -->
+        <item name="colorControlActivated">@color/custom_color</item>
+        <!-- Цвет подсветки для выбранного текста -->
+        <item name="colorControlHighlight">@color/custom_color</item>
+        <!-- Цвет для индикаторов выполнения и переключателей -->
+        <item name="colorControlNormal">@color/custom_color</item>
+        <!-- Цвет кнопки или выделения (например, подсветка текста) -->
+        <item name="colorButtonNormal">@color/custom_color</item>
+    </style>
+
+    <style name="Theme.MessengerApp" parent="Base.Theme.MessengerApp" />
+</resources>

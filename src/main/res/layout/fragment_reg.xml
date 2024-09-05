@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".RegistrationFragment">
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="140dp"
+        android:maxWidth="300dp"
+        app:boxStrokeColor="#46ADA4"
+        app:hintTextColor="@color/cardview_light_background"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите логин"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/custom_cursor"
+
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="#46ADA4"
+            android:padding="12dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/loginLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="24dp"
+        android:maxWidth="300dp"
+        app:boxStrokeColor="#46ADA4"
+        app:hintTextColor="@color/cardview_light_background"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите Email"
+            android:textCursorDrawable="@drawable/custom_cursor"
+
+            android:inputType="textEmailAddress"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="#46ADA4"
+            android:padding="12dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emailLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="24dp"
+        android:maxWidth="300dp"
+        app:boxStrokeColor="#46ADA4"
+        app:hintTextColor="@color/cardview_light_background"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите номер"
+            android:inputType="phone"
+            android:textCursorDrawable="@drawable/custom_cursor"
+
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="#46ADA4"
+            android:padding="12dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/phoneLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="24dp"
+        android:maxWidth="300dp"
+        app:boxStrokeColor="#46ADA4"
+        app:hintTextColor="@color/cardview_light_background"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите пароль"
+            android:textCursorDrawable="@drawable/custom_cursor"
+
+            android:inputType="textPassword"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="#46ADA4"
+            android:padding="12dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordRepeatLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/passwordLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="24dp"
+        android:maxWidth="300dp"
+        app:boxStrokeColor="#46ADA4"
+        app:hintTextColor="@color/cardview_light_background"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPasswordRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Повторите пароль"
+            android:textCursorDrawable="@drawable/custom_cursor"
+
+            android:inputType="textPassword"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="#46ADA4"
+            android:padding="12dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/regButton"
+        android:layout_width="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:text="Зарегистрироваться"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        android:background="@drawable/button_gradient"
+
+        app:layout_constraintTop_toBottomOf="@id/passwordRepeatLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:id="@+id/authLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#04B1A2"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:text="Войти"
+        app:layout_constraintTop_toBottomOf="@id/regButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
