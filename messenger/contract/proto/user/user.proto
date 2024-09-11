@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+package user;
+
+option go_package="mgrankin-cloud.sso.v1;ssov2";
+
+service User {
+  rpc GetUser(GetUserRequest) returns (GetUserResponse);
+
+  rpc UpdateUserInfo(UpdateUserInfoRequest) returns (UpdateUserInfoResponse);
+
+  rpc DeleteUser(DeleteUserRequest) returns (DeleteUserResponse);
+
+  rpc ChangeUserPassword(ChangeUserPasswordRequest) returns (ChangeUserPasswordResponse);
+}
+
+message GetUserRequest {
+  int64 user_id = 1;
+}
+
+message GetUserResponse {
+  string email = 1;
+  string username = 2;
+  string phone = 3;
+  bytes photo = 4;
+  bool active = 5;
+}
+
+message UpdateUserInfoRequest {
+  int64 user_id = 1;
+  string email = 2;
+  string username = 3;
+  string phone = 4;
+  bytes photo = 5;
+  string active = 6;
+}
+
+message UpdateUserInfoResponse {
+  bool success = 1;
+}
+
+message DeleteUserRequest {
+  int64 user_id = 1;
+}
+
+message DeleteUserResponse {
+  bool success = 1;
+}
+
+message ChangeUserPasswordRequest {
+  int64 user_id = 1;
+  string new_password = 3;
+}
+
+message ChangeUserPasswordResponse {
+  bool success = 1;
+}
+
+
