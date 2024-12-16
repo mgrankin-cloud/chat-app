@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package notification;
+
+option go_package = "mgrankin-cloud.sso.v1;ssov7";
+
+service NotificationService {
+    rpc SendNotification (SendNotificationRequest) returns (SendNotificationResponse);
+    rpc SubscribeNotifications (SubscribeNotificationsRequest) returns (stream Notification);
+}
+
+message SendNotificationRequest {
+    string user_id = 1;
+    string message = 2;
+}
+
+message SendNotificationResponse {
+    bool success = 1;
+    string message = 2;
+}
+
+message SubscribeNotificationsRequest {
+    string user_id = 1;
+}
+
+message Notification {
+    string message = 1;
+}

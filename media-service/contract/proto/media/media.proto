@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package media;
+
+option go_package = "mgrankin-cloud.sso.v1;ssov6";
+
+service Media {
+    rpc UploadMedia (UploadMediaRequest) returns (UploadMediaResponse);
+    rpc DownloadMedia (DownloadMediaRequest) returns (DownloadMediaResponse);
+}
+
+message UploadMediaRequest {
+    bytes data = 1;
+    string file_name = 2;
+    string mime_type = 3;
+}
+
+message UploadMediaResponse {
+    int64 file_id = 1;
+}
+
+message DownloadMediaRequest {
+    int64 file_id = 1;
+}
+
+message DownloadMediaResponse {
+    bytes data = 1;
+    string file_name = 2;
+    string mime_type = 3;
+}
