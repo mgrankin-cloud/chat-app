@@ -1,8 +1,0 @@
-env: "local"
-storage_path: "postgres://root:pass@localhost:5432/instant_messenger_db?sslmode=disable"
-grpc:
-  port: 50052
-  timeout: 10s 
-server: "http://localhost:8082"
-lb_address: ":3002"
-health_check_interval: 15s  
